@@ -1,0 +1,32 @@
+{
+  "name": "urlshorterapp",
+  "version": "1.0.0",
+  "description": "Node.js/MongoDB playground",
+  "main": "index.js",
+  "dependencies": {
+    "config": "^3.2.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.6",
+    "shortid": "^2.2.14",
+    "valid-url": "^1.0.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marvin098/urlshorterapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marvin098/urlshorterapp/issues"
+  },
+  "homepage": "https://github.com/marvin098/urlshorterapp#readme"
+}
