@@ -9,11 +9,12 @@ const Url = require("../models/Url");
 // @route   POST /api/url/shorten
 // @des     Creating short URL
 router.post('/shorten', async (req, res) => {
+    console.log("Request on /shorten with req {} and body", req.headers, req.body)
     const { urlLong } = req.body;
     const baseUrl = config.get('baseUrl');
 
     if (!validUrl.isUri(baseUrl)) {
-        return res.status(401).json('Invalid base url');
+        return res.status(400).json('Invalid base url');
     }
 
     if (validUrl.isUri(urlLong)) {
