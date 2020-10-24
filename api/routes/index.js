@@ -7,7 +7,8 @@ const Url = require("../models/Url");
 // @route   GET /
 // @des     Redirect to orginal URL
 router.get('/:shortUrlId', async (req, res) => {
-    try {
+  console.log("Request on 5000 with req {}", req.headers)
+  try {
         const url = await Url.findOne({urlCode: req.params.shortUrlId});
         
         if(url){
