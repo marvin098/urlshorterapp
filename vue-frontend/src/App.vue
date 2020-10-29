@@ -2,20 +2,13 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <b-container>
-        <UrlField/>
+      <router-view></router-view>
     </b-container>
   </div>
 </template>
 
 <script>
-import UrlField from './components/UrlField/UrlField.vue'
 
-export default {
-  name: 'App',
-  components: {
-    UrlField
-  }
-}
 </script>
 
 <style>
