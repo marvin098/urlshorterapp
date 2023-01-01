@@ -4,7 +4,7 @@
   "description": "Node.js/MongoDB playground",
   "main": "index.js",
   "dependencies": {
-    "config": "^3.2.2",
+    "config": "^3.3.8",
     "express": "^4.17.1",
     "mongoose": "^5.7.5",
     "shortid": "^2.2.14",
